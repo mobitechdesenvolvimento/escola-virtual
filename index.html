@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Escola Virtual | EE Dr. Francisco Pereira da Rocha</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+      <button id="increaseFont" aria-label="Aumentar fonte">A+</button>
+      <button id="decreaseFont" aria-label="Diminuir fonte">A-</button>
+      <button id="highContrast" aria-label="Alto contraste">
+        Alto Contraste
+      </button>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo-container">
+          <img src="images/logo-escola.png" alt="Logo da Escola" class="logo" />
+          <div class="school-info">
+            <h1>Nome da escola</h1>
+            <p>Educação de qualidade para todos</p>
+          </div>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home" class="active">Início</a></li>
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#calendar">Calendário</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#library">Biblioteca</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero-banner" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Bem-vindo ao nosso Portal Virtual</h2>
+          <p>
+            Toda a informação escolar em um só lugar, acessível a qualquer
+            momento.
+          </p>
+          <div class="hero-buttons">
+            <a href="#news" class="btn primary">Ver Notícias</a>
+            <a href="#calendar" class="btn secondary">Calendário Escolar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Destaques -->
+    <section class="highlights-section">
+      <div class="container">
+        <h2 class="section-title">Destaques</h2>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="icon-box">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Comunicados</h3>
+            <p>
+              Fique por dentro de todos os avisos e comunicados oficiais da
+              escola.
+            </p>
+            <a href="#news" class="read-more"
+              >Ler mais <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="highlight-card">
+            <div class="icon-box">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Eventos</h3>
+            <p>
+              Confira as datas importantes, reuniões e atividades escolares.
+            </p>
+            <a href="#calendar" class="read-more"
+              >Ler mais <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="highlight-card">
+            <div class="icon-box">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Biblioteca</h3>
+            <p>Conheça nosso acervo e as regras para empréstimo de livros.</p>
+            <a href="#library" class="read-more"
+              >Ler mais <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section class="news-section" id="news">
+      <div class="container">
+        <h2 class="section-title">Últimas Notícias</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-image">
+              <img src="images/news1.jpg" alt="Reunião de pais" />
+            </div>
+            <div class="news-content">
+              <span class="news-date">20/05/2025</span>
+              <h3>Reunião de Pais e Mestres</h3>
+              <p>
+                Convidamos todos os pais e responsáveis para a reunião que
+                acontecerá no dia 25/05 às 14h.
+              </p>
+              <a href="#" class="read-more"
+                >Ler mais <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <img src="images/news2.jpg" alt="Olimpíada de matemática" />
+            </div>
+            <div class="news-content">
+              <span class="news-date">15/05/2025</span>
+              <h3>Olimpíada de Matemática</h3>
+              <p>
+                Inscrições abertas para a OBMEP 2025. Participe e represente
+                nossa escola!
+              </p>
+              <a href="#" class="read-more"
+                >Ler mais <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <img src="images/news3.jpg" alt="Festa junina" />
+            </div>
+            <div class="news-content">
+              <span class="news-date">10/05/2025</span>
+              <h3>Arraiá da Escola</h3>
+              <p>
+                Estamos organizando nossa tradicional festa junina. Participe
+                das comissões!
+              </p>
+              <a href="#" class="read-more"
+                >Ler mais <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-footer">
+          <a href="#" class="btn secondary">Ver todas as notícias</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Calendário -->
+    <section class="calendar-section" id="calendar">
+      <div class="container">
+        <h2 class="section-title">Calendário Escolar</h2>
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <h3>Maio 2025</h3>
+            <div class="calendar-nav">
+              <button class="calendar-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="calendar-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sáb</div>
+            </div>
+            <div class="calendar-days">
+              <!-- Dias do calendário serão preenchidos via JavaScript -->
+            </div>
+          </div>
+          <div class="calendar-events">
+            <h4>Eventos deste mês:</h4>
+            <ul>
+              <li><span class="event-date">25/05</span> Reunião de Pais</li>
+              <li><span class="event-date">30/05</span> Entrega de Boletins</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção da Equipe -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <h2 class="section-title">Nossa Equipe</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="images/team1.jpg" alt="Diretor Paulo Florêncio" />
+            </div>
+            <h3>Paulo Florêncio Pereira</h3>
+            <p class="team-role">Diretor</p>
+            <p class="team-bio">
+              Formado em Pedagogia com especialização em Gestão Escolar.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="images/team2.jpg" alt="Coordenadora Maria" />
+            </div>
+            <h3>Maria da Silva</h3>
+            <p class="team-role">Coordenadora Pedagógica</p>
+            <p class="team-bio">
+              Mestre em Educação com 15 anos de experiência.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="images/team3.jpg" alt="Secretária Ana" />
+            </div>
+            <h3>Ana Paula Costa</h3>
+            <p class="team-role">Secretária</p>
+            <p class="team-bio">Responsável pela administração escolar.</p>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <a href="#" class="btn secondary">Conheça toda a equipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção da Biblioteca -->
+    <section class="library-section" id="library">
+      <div class="container">
+        <h2 class="section-title">Biblioteca Escolar</h2>
+        <div class="library-content">
+          <div class="library-info">
+            <h3>Horário de Funcionamento</h3>
+            <ul class="library-hours">
+              <li><strong>Segunda a Sexta:</strong> 8h às 12h e 13h às 17h</li>
+              <li><strong>Sábado:</strong> Fechado</li>
+            </ul>
+
+            <h3>Regras de Empréstimo</h3>
+            <ul class="library-rules">
+              <li>Prazo de empréstimo: 7 dias</li>
+              <li>Limite de livros: 2 por aluno</li>
+              <li>Multa por atraso: R$ 1,00 por dia</li>
+            </ul>
+          </div>
+
+          <div class="library-search">
+            <h3>Buscar Livros</h3>
+            <div class="search-box">
+              <input type="text" placeholder="Digite o título ou autor..." />
+              <button class="search-btn">
+                <i class="fas fa-search"></i> Buscar
+              </button>
+            </div>
+
+            <div class="book-categories">
+              <h4>Categorias:</h4>
+              <ul>
+                <li><a href="#">Literatura Brasileira</a></li>
+                <li><a href="#">Literatura Estrangeira</a></li>
+                <li><a href="#">Ciências</a></li>
+                <li><a href="#">Matemática</a></li>
+                <li><a href="#">História</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Rua dev, 50 - Paulista -
+                Sp
+              </li>
+              <li><i class="fas fa-phone"></i> (13) 11111-1111</li>
+              <li><i class="fas fa-envelope"></i> contato@escola.edu.br</li>
+            </ul>
+
+            <div class="social-media">
+              <h3>Redes Sociais</h3>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Assunto:</label>
+                <select id="subject">
+                  <option value="general">Informação Geral</option>
+                  <option value="admission">Matrículas</option>
+                  <option value="library">Biblioteca</option>
+                  <option value="other">Outro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo-escola.png" alt="Logo da Escola" />
+            <p>Nome da escola</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#news">Notícias</a></li>
+              <li><a href="#calendar">Calendário</a></li>
+              <li><a href="#team">Equipe</a></li>
+              <li><a href="#library">Biblioteca</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-address">
+            <h4>Endereço</h4>
+            <p>Rua dev</p>
+            <p>Paulista - SP</p>
+            <p>CEP: 00000-000</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            Desenvolvido por João Vitor da Costa Assis como projeto de extensão
+            da Faculdade Descomplica + UniAmérica.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
